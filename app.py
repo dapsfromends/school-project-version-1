@@ -4,12 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return render_template("index.html")
-
-@app.route("/home")
-def homepage():
-    return render_template("index.html")
-
+    return "<h1>Welcome to My First Flask App!</h1>"
 
 @app.route("/about")
 def about():
